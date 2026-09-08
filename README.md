@@ -8,8 +8,11 @@ This repository hosts static artwork so TRMNL can fetch it from public raw GitHu
 
 ### ESP32 electronics
 
-Raw URL:
+Standard 2-bit grayscale PNG:
 `https://raw.githubusercontent.com/fhugh501/trmnl-artwork/main/artwork/esp32/esp32-electronics.png`
+
+Lightweight 1-bit Alias-safe PNG:
+`https://raw.githubusercontent.com/fhugh501/trmnl-artwork/main/artwork/esp32/esp32-electronics-1bit.png`
 
 ### AT&T Long Lines — landline network
 
@@ -28,6 +31,6 @@ Raw URL:
 
 ## TRMNL
 
-These files are prepared at 800×480 with a four-level grayscale palette for a TRMNL OG v2 / Seeed Studio 7.5-inch e-paper display.
+These files are prepared at 800×480 for a TRMNL OG v2 / Seeed Studio 7.5-inch e-paper display.
 
-For a private plugin, use the raw image URL in the image markup. Because the URLs are public, TRMNL's renderer can fetch them without access to the local Home Assistant network.
+For Alias, use the lightweight 1-bit PNG if the device reports a file-size or memory-allocation error. Keep cache disabled while testing.
